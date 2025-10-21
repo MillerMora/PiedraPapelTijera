@@ -1,7 +1,7 @@
 const SELECCION = document.getElementById("lista_t")
-    const BOTON = document.getElementById("BOTON")
-    let CONTENEDOR_ELECCION = document.getElementsByClassName("contenedor")
-    let maquina;
+const BOTON = document.getElementById("boton")
+const CONTENEDOR_ELECCION = document.getElementById("conten")
+let maquina;
     
     function comprobacion (seleccion, maquina){
         const juego = {
@@ -11,13 +11,13 @@ const SELECCION = document.getElementById("lista_t")
         };
 
         if (juego[seleccion] == maquina){
-            return console.log("Maquina saco ", maquina, "\njugador saco", seleccion, "\nGanaste")
+            return CONTENEDOR_ELECCION.innerHTML = `<p>Maquina saco ${maquina} jugador saco ${seleccion} Ganaste</p>`
         }
         if (juego[maquina] == seleccion){
-            return console.log("Maquina saco ", maquina, "\njugador saco", seleccion, "\nGano la maquina")
+            return CONTENEDOR_ELECCION.innerHTML = `<p>Maquina saco ${maquina} jugador saco ${seleccion} Gano la maquina</p>`
         }
         else{
-            return console.log("Maquina saco ", maquina, "\njugador saco", seleccion, "\nNinguno gano")
+            return CONTENEDOR_ELECCION.innerHTML = `<p>Maquina saco ${maquina} jugador saco ${seleccion} Ninguno gano</p>`
         }
 
 
