@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Piedra, Papel o Tijeras - vs Máquina</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1 id="titulo">Piedra, Papel o Tijeras</h1>
+
+        <div class="contenido">
+            <div class="jugador_1">
+                <h1>Jugador</h1>
+                <select name="lista" id="lista_j1">
+                    <option value="piedra">Piedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tijera">Tijera</option>
+                </select>
+            </div>
+
+            <div class="centro">
+                <h1>Puntaje</h1>
+                <p id="ganador"></p>
+                <p id="contadorj1">0</p>
+                <p id="contadorj2">0</p>
+            </div>
+
+            <div class="jugador_2">
+                <h1>Máquina</h1>
+                <p id="eleccionMaquina">❓</p>
+            </div>
+        </div>
+
+        <button id="boton">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
