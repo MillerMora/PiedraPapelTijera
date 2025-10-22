@@ -13,33 +13,55 @@ body {
   align-items: center;
 }
 
+/* Caja general */
 .contenedor {
   background-color: white;
   padding: 40px 50px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  width: 320px;
+  width: 700px;
   transition: transform 0.2s ease-in-out;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 25px;
 }
 
+/* --- Título --- */
 #titulo {
   font-size: 1.8rem;
   color: #333;
-  margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
+/* --- Contenido principal (jugadores o selección) --- */
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-.eleccion {
+.jugador_1, .jugador_2, .centro {
+  flex: 1;
+  text-align: center;
+}
+
+.centro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
 }
 
+.jugador_1 h1, .jugador_2 h1, .centro h1 {
+  margin-bottom: 10px;
+}
 
+/* --- Selects --- */
 #lista_t {
   width: 80%;
   padding: 10px;
@@ -56,7 +78,8 @@ body {
   background-color: #f0f8ff;
 }
 
-#boton {
+/* --- Botón --- */
+#boton, .botones {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -66,8 +89,10 @@ body {
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
 }
-
-#boton:hover {
+.botones{
+  width: 300px;
+}
+#boton:hover, .botones:hover {
   background-color: #4a8de0;
   transform: translateY(-2px);
 }
