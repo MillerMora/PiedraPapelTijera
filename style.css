@@ -79,7 +79,7 @@ body {
 }
 
 /* --- Botón --- */
-#boton, .botones {
+#boton, #boton2, .botones {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -92,7 +92,7 @@ body {
 .botones{
   width: 300px;
 }
-#boton:hover, .botones:hover {
+#boton:hover,#boton2:hover, .botones:hover {
   background-color: #4a8de0;
   transform: translateY(-2px);
 }
